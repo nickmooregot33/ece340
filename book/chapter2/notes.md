@@ -67,7 +67,7 @@ Atoms and Electrons
 	- When dealing with classical quantities like energy E and momentum p, we must relate these quantities with abstract quantum mechanical operators
 	- The probability of finding a particle with wavefunction Psi in a volume dx dy dz is Psi Psi* dx dy dz
 		- Psi Psi* is normalized so that the integral of Psi Psi* dx dy dz from negative infinity to positive infinity is 1
-		- average value <Q> of some variable Q is calculated from the wavefunction by using operator form Q_op
+		- average value <\Q\> of some variable Q is calculated from the wavefunction by using operator form Q_op
 			- \<Q\> = Integral of Psi\* Q_op Psi dx dy dz from negative infinity to positive infinity
 		- the resulting equation includes both space and time dependencies
 			- commonly the dependencies are calculated separately and then combined
