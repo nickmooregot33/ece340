@@ -112,4 +112,46 @@ Crystal Properties and Growth of Semiconductors
 	- basic diamond structure, but different atoms on many sites
 - III-V compounds
 	- have the abililty to vary mixture of elements on each of the two sublattices of zinc blend crystal
+	- common to represent the composition by assigning subscripts to the various elements
+	- subscripts of a interpenetrating lattice add up to 1
+- each atom in diamond and zinc-blend have 4 nearest neighbors
+	- this is important for fabrication
+1.3 Bulk Crystal Growth
+===
+- This is a bunch of stuff I'm not going to read, I think
+
+1.4 Epitaxial Growth
+===
+
+1.4.1 Lattice matching in epitaxial growth 
+---
+
+1.5 Wave Propagation in discrete periodic structures
+===
+- wave is described by wavelength, 
+	- angular frequency 
+	- phase 
+	- intensity I = A^2 
+	- v_p is phase velocity and can be written w/k
+- may deal with a wave packet
+	- made up of a superposition of various waves
+	- can be shown to travel with *group velocity* v_g
+	- v_g = dw/dk
+	- psi = A e^(j(kx +/- st)) describes a plane wave
+		- also, one can take linear combinations of these plane waves and describe them as standing waves
+			 - sin(kx +/- wt) and/or cos(kx +/- wt)
+	- plane waves can't travel in a finite crystal
+		- reflections at the boundaries will cause standing wave patterns
+	- math is simpler for infinite crystal
+		- psi(0) = psi(L) (periodic boundary condition)
+
+Summary
+===
+- Semiconductor devices are at the heart of information technology.  Elemental semiconductors such as Si appear in column IV of the periodic table, while compound semiconductors such as GaAs consist of elements symmetrically around column IV.  More complicated alloy semiconductors are used to optimize optoelectronic properties.
+- These devices are generally made in single-crystal material for best performance.  Single crystals have long-range order, while polycrystalline and amorphous materials have short-range and no order, respectively.
+- Lattices are determined by symmetry. In 3-D, these are called Bravais lattices.  When we put a basis of atom(s) on the lattice sites, we get a crystal.  Common semiconductors have an fcc symmetry with a basis of two identical or different atoms, resulting in diamond or zinc blende crystals, respectively.
+- The fundamental building block of a lattice is a primitive cell with lattice points at its corners.  Sometimes it is easier to describe the crystal in terms of a larger "unit" cell with lattice points not only at the corners but also at body or face centers.
+- Translating unit cells by integer numbers of basis vectors can replicate the lattice.  Planes and directions in a lattice can be defined in terms of Miller indices.
+- Real crystals can have defects in 0-,1-,2-, and 3-D, some of which are benign, but many of which are harmful for device operation.
+- Semicontuctor bulk crystals are grown from a melt by the Czochralski method, starting from a seed.  Single-crystal epitaxial layers can be grown on top of semiconductor wafers in various ways, such as VPE, metal-organic chemical vapor deposition (MOCVD), or MBE.  One can thereby optimize doping and band-structure properties for device fabrication.
 
