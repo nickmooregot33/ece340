@@ -1,10 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from math import pi
+from math import e
+from math import degrees
+from math import radians
 
-h1 = 6.626070040(81)×10−34 #joule*seconds
-h2 = 4.135667662(25)×10−15 #eV*seconds
-E1 = h1 * f
-E2 = h2 *f
 
+
+def h(energy):
+    if energy == 'joule':
+        return 6.62607004081*10-34
+    else if energy == 'eV':
+        return 4.13566766225*10**-15
+
+def E(energy,v): return h(energy) * v
+
+def Ew(energy, w): return (h(energy)/(2 * pi))(2*pi*w)
 
