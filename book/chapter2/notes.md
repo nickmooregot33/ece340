@@ -75,4 +75,7 @@ Atoms and Electrons
 	- with pre-factors or weighting coefficients that depend on the initial conditions.
 
 **Potential Well Problem**
-- 
+- it's very difficult to find solutions to schrodinger equation for realistic situations, but there are problems that illustrate the theory
+	- potential energy well with infinite boundaries 
+	- V(x) = infinite for x = {0,L} else V(x) = 0
+	- 
