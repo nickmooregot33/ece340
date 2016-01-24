@@ -78,4 +78,8 @@ Atoms and Electrons
 - it's very difficult to find solutions to schrodinger equation for realistic situations, but there are problems that illustrate the theory
 	- potential energy well with infinite boundaries 
 	- V(x) = infinite for x = {0,L} else V(x) = 0
-	- 
+	- energy is quantized in the well.  Not continuous, and only certain values are allowed
+		- these energy levels show up in lots of small-geometry structures in semiconductors
+	- quantum state of the particle is described by {quantum number => energy state, wave function}
+	  
+	
