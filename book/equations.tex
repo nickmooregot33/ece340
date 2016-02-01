@@ -34,7 +34,6 @@ $$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}\Rightarrow \frac{n\hbar}{rm}\Rightarrowv=\fr
 \end{align}
 \end{itemize}
 \subsection{Quantum Mechanics}
-\begin{itemize}
 \begin{tabular}{lcr}
 Classical Variable & \rightarrow & Quantum Operator\\
 \hline
@@ -43,7 +42,69 @@ $f(x)$ & \rightarrow & $f(x)$\\
 $\rho(x)$ & \rightarrow & $\frac{\hbar}{j} \frac{\partial}{\partial x}$\\
 E & \rightarrow & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
 \hline
-\end{tabular}
+\end{tabular}\\
+\begin{itemize}
+\item Normalization of the probability density (the wave function is the probability density):
+	\begin{equation}
+		\label{Normalization_of_the_wave_function}
+		\int_{-\infty}^{\infty} \Psi^{*}\Psi dxdydz=1
+	\end{equation}
+\item Time averaged expectation of the particle state
+	\begin{equation}
+		\label{Time_average_of_the_state}
+		<Q>=\int_{-\infty}^{\infty}\Psi^{*}Q_{op}\Psi dxdydz
+	\end{equation}
+\item Classical energy of a partical:\begin{equation} \label{classical_energy_of_a_partical}
+	KE+PE=E\Rightarrow\frac{1}{2}mv^2 + V = E\end{equations}
+	\begin{equation}
+		\label{part_2}
+	\frac{1}{2}mv^2=\frac{1}{2}\frac{(mv)^2}{m}=\frac{1}{2}\frac{\rho^2}{m}=\frac{\rho^2}{2m}\Rightarrow\frac{\rho^2}{2m}+V=E
+\end{equation}
+$$\rho\rightarrow\frac{\hbar}{j}\frac{\partial}{\partial x},E\rightarrow -\frac{\hbar}{j}\frac{\partial}{\partial t}$$$$\Rightarrow \frac{-1}{2m}\hbar\frac{\partial^2}{\partial x^2}\Psi(x,t)+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}$$ \\ 
+where $$(\frac{\partial}{\partial x})^2\rightarrow\frac{\partial^2}{\partial x^2}, j^2 = -1$$
+\item Wave function in 3D then:
+	\begin{equation}\label{3D_wave_function}
+	\frac{-\hbar}{2m}\nabla^2\Psi+V\Psi=\frac{-\hbar}{j}\frac{\partial\Psi}{\partial t} \ni \nabla^2\Psi=\frac{\partial^2\Psi}{\partial x^2}+\frac{\partial^2\Psi}{\partial y^2}+\frac{\partial^2\Psi}{\partial z^2}\end{equation}
+\item Separation of variables:
+	\begin{equation}\label{separated}
+		\frac{-\hbar}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}
+	\end{equation}
+	$$\Rightarrow$$
+	\begin{equation}\label{still_separated}
+		-\frac{\hbar}{2m}\frac{\partial^2\psi(x)}{\partial x^2}\phi(t)+V(x)\psi(x)\phi(t)=-\frac{\hbar}{j}\psi(x)\frac{\partial\phi}{\partial t}
+	\end{equation}
+	$$\Rightarrow$$
+\begin{equation}\label{time_dependent}
+	\frac{d\phi(t)}{dt}+\frac{j}{\hbar}E\phi(t)=0	
+	\end{equation} (time dependent portion)
+	\begin{equation}\label{time_independent}
+		-\frac{\hbar}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)
+	\end{equation} (time independent portion)
+
+\item E $\equiv$ equivalent constant, corresponds to total energy of the particle
+\item Wave function as linear combination of various eigenfunctions
+	\begin{equation}
+	\label{eigenfunctions}
+	\psi(x,t)=\Sum_{n}C_{n}\Psi_{n}e^{-j\frac{E_{n}}{\hbar t}} \ni E_{n}\equiv nth~prefactor
+	\end{equation}
+\item Infinite potential well
+		\[V(x) = \left\{
+				  \begin{array}{lr}
+					  0 & , x \neq 0 \text{ and } x \neq L\\
+			\infty & , x = 0 \text{ or } x = L
+					    \end{array}
+					    \right.
+				    \]
+				    $$\Rightarrow$$
+    \begin{equation}
+	    (\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x))\psi(x)=E\psi(x)\Rightarrow\frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar}E\psi(x)
+    \end{equation}$$\Rightarrow$$
+    \begin{equation}
+	    \frac{d^2\psi(x)}{dx^2}+\frac{2m}{\hbar^2}E\psi(x)=0
+    \end{equation}$$\Rightarrow$$
+    \begin{equation}
+	    \psi(x)=\{\sin(kx),\cos(kx)\}\ni k=\frac{\sqrt{2mE}}{\hbar}
+    \end{equation}
 \end{itemize}
 \endsubsection
 \endsection
@@ -51,7 +112,6 @@ E & \rightarrow & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
 \begin{itemize}
 \item Equilibrium number of EHP's in pure Si at room temp: $$10^{10}\frac{EHP}{cm^3}$$
 \item Si atom density in pure Si at room temp: $$5*10^{22}\frac{atoms}{cm^3}$$
-\item `
 \end{itemize}
 \endsection
 
