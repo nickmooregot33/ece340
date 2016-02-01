@@ -47,9 +47,22 @@ Energy Bands and Charge Carriers in Semiconductors
 	- must change momentum and energy
 	- generally, when involving a change of k, part of the energy is given up as heat to the lattice
 - differences between direct and indirect semiconductors is important for choosing semiconductors with light output
-	- LEDs and lasers need direct transitions or indirect but vertical transitions that use defect states 
+           	- LEDs and lasers need direct transitions or indirect but vertical transitions that use defect states 
 		- give up the extra energy as a photon
 
 **variation of energy bands with alloy composition**
-- 
+- varying the compounds within a lattice (with a percentage of the groupX compounds being one element, and the rest being another) has an effect on energy band structures
+- alloys can change from indirect to direct or vice versa by varying the percentages
+
+3.2 Charge Carriers in Semi-Conductors
+---
+**Electrons and Holes**
+- At 0K, all electrons are in valence band.  As temperature rises some electrons are excited into the conduction band by receiving enough thermal energy
+  - resulting in a *mostly* filled valence band and a few electrons in conduction band, and a **crapload** of empty states in the conduction band
+- empty state in the valence band is a **hole**
+  - **electron-hole pair (EHP)** is an electron excited to conduction band from valence band, and the hole it leaves behind
+  - electrons in conduction band are free to move around easily
+  - current contribution of a hole is equivalent to that of a positively charged particle with velocity v_p (the same as the missing electron)
+  - 
+
 
