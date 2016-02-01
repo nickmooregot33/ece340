@@ -21,90 +21,155 @@
 \item Paschen: $$v=cR(\frac{1}{3^2}-\frac{1}{n^2}),n=4,5,6,...$$
 \item Postulate for Bohr:$$\rho_0=n\hbar,n=1,2,3,4,...$$
 \item Finding radial forces on orbiting electron:\\(Electrical force toward nucleus) = (Equivalent force in terms of radial acceleration)\\$$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}$$
-$$\rho_0=n\hbar=mvr  \Rightarrow mv^2=\frac{m^2v^2}{m}=\frac{n^2\hbar^2}{mr^2}$$ $$\frac{q^2}{kr^2}=\frac{1}{mr}\frac{n^2\hbar^2}{r^2}\Rightarrow r_n=\frac{kn^2\hbar^2}{mq^2}$$ $|r_n$ is the radius of the nth orbit
-$$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}\Rightarrow \frac{n\hbar}{rm}\Rightarrowv=\frac{q^2}{kn\hbar}$$by subbing r from above.  \\\\$\Rightarrow$ K.E. of $e^-=$$$\frac{1}{2}mv^2=\frac{mq^4}{2k^2n^2\hbar^2}$$\\\\P.E. of $e^-=$$$-\frac{q^2}{kr_n}=-\frac{mq^4}{k^2n^2\hbar^2}$$ by subbing r\\\\Total Energy of $e^-=$$$E_n=KE=PE=-\frac{mq^4}{2k^2n^2\hbar^2}=-KE$$
+  $$\rho_0=n\hbar=mvr  \Rightarrow mv^2=\frac{m^2v^2}{m}=\frac{n^2\hbar^2}{mr^2}$$ $$\frac{q^2}{kr^2}=\frac{1}{mr}\frac{n^2\hbar^2}{r^2}\Rightarrow r_n=\frac{kn^2\hbar^2}{mq^2}$$ $|r_n$ is the radius of the nth orbit
+  $$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}\Rightarrow \frac{n\hbar}{rm}\Rightarrowv=\frac{q^2}{kn\hbar}$$by subbing r from above.  \\\\$\Rightarrow$ K.E. of $e^-=$$$\frac{1}{2}mv^2=\frac{mq^4}{2k^2n^2\hbar^2}$$\\\\P.E. of $e^-=$$$-\frac{q^2}{kr_n}=-\frac{mq^4}{k^2n^2\hbar^2}$$ by subbing r\\\\Total Energy of $e^-=$$$E_n=KE=PE=-\frac{mq^4}{2k^2n^2\hbar^2}=-KE$$
 \item Energy difference between orbits: $$E_{n2}-E_{n1}=\frac{mq^4}{2k^2\hbar^2}(\frac{1}{n_1^2}-\frac{1}{n_2^2})$$
 \item Frequency of light given by a transition between orbits:$$V_{21}=\left[\frac{mq^4}{2k^2\hbar^2h}\right](\frac{1}{n_1^2}-\frac{1}{n_2^2})$$
 \item Heisenberg uncertainty principle:\\
-\begin{align}
-\label{Heisenberg}
-&(\Delta x)&(\Delta \rho_x)& \ge&\frac{\hbar}{2}\\
-\label{Heisenberg part 2}
-&(\Delta E)&(\Delta t)&\ge&\frac{\hbar}{2}
-\end{align}
+  \begin{align}
+    \label{Heisenberg}
+    &(\Delta x)&(\Delta \rho_x)& \ge&\frac{\hbar}{2}\\
+    \label{Heisenberg part 2}
+    &(\Delta E)&(\Delta t)&\ge&\frac{\hbar}{2}
+  \end{align}
 \end{itemize}
 \subsection{Quantum Mechanics}
 \begin{tabular}{lcr}
-Classical Variable & \rightarrow & Quantum Operator\\
-\hline
-$x$ & \rightarrow & $x$\\
-$f(x)$ & \rightarrow & $f(x)$\\
-$\rho(x)$ & \rightarrow & $\frac{\hbar}{j} \frac{\partial}{\partial x}$\\
-E & \rightarrow & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
-\hline
+  Classical Variable & \rightarrow & Quantum Operator\\
+  \hline
+  $x$ & \rightarrow & $x$\\
+  $f(x)$ & \rightarrow & $f(x)$\\
+  $\rho(x)$ & \rightarrow & $\frac{\hbar}{j} \frac{\partial}{\partial x}$\\
+  E & \rightarrow & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
+  \hline
 \end{tabular}\\
 \begin{itemize}
 \item Normalization of the probability density (the wave function is the probability density):
-	\begin{equation}
-		\label{Normalization_of_the_wave_function}
-		\int_{-\infty}^{\infty} \Psi^{*}\Psi dxdydz=1
-	\end{equation}
+  \begin{equation}
+    \label{Normalization_of_the_wave_function}
+    \int_{-\infty}^{\infty} \Psi^{*}\Psi dxdydz=1
+  \end{equation}
 \item Time averaged expectation of the particle state
-	\begin{equation}
-		\label{Time_average_of_the_state}
-		<Q>=\int_{-\infty}^{\infty}\Psi^{*}Q_{op}\Psi dxdydz
-	\end{equation}
+  \begin{equation}
+    \label{Time_average_of_the_state}
+    <Q>=\int_{-\infty}^{\infty}\Psi^{*}Q_{op}\Psi dxdydz
+  \end{equation}
 \item Classical energy of a partical:\begin{equation} \label{classical_energy_of_a_partical}
-	KE+PE=E\Rightarrow\frac{1}{2}mv^2 + V = E\end{equations}
-	\begin{equation}
-		\label{part_2}
-	\frac{1}{2}mv^2=\frac{1}{2}\frac{(mv)^2}{m}=\frac{1}{2}\frac{\rho^2}{m}=\frac{\rho^2}{2m}\Rightarrow\frac{\rho^2}{2m}+V=E
-\end{equation}
-$$\rho\rightarrow\frac{\hbar}{j}\frac{\partial}{\partial x},E\rightarrow -\frac{\hbar}{j}\frac{\partial}{\partial t}$$$$\Rightarrow \frac{-1}{2m}\hbar\frac{\partial^2}{\partial x^2}\Psi(x,t)+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}$$ \\ 
-where $$(\frac{\partial}{\partial x})^2\rightarrow\frac{\partial^2}{\partial x^2}, j^2 = -1$$
+  KE+PE=E\Rightarrow\frac{1}{2}mv^2 + V = E\end{equations}
+  \begin{equation}
+    \label{part_2}
+    \frac{1}{2}mv^2=\frac{1}{2}\frac{(mv)^2}{m}=\frac{1}{2}\frac{\rho^2}{m}=
+    \frac{\rho^2}{2m}\Rightarrow\frac{\rho^2}{2m}+V=E
+  \end{equation}
+  $$\rho\rightarrow\frac{\hbar}{j}\frac{\partial}{\partial x},E\rightarrow -\frac{\hbar}{j}\frac{\partial}{\partial t}$$$$\Rightarrow \frac{-1}{2m}\hbar\frac{\partial^2}{\partial x^2}\Psi(x,t)+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}$$ \\ 
+  where $$(\frac{\partial}{\partial x})^2\rightarrow\frac{\partial^2}{\partial x^2}, j^2 = -1$$
 \item Wave function in 3D then:
-	\begin{equation}\label{3D_wave_function}
-	\frac{-\hbar}{2m}\nabla^2\Psi+V\Psi=\frac{-\hbar}{j}\frac{\partial\Psi}{\partial t} \ni \nabla^2\Psi=\frac{\partial^2\Psi}{\partial x^2}+\frac{\partial^2\Psi}{\partial y^2}+\frac{\partial^2\Psi}{\partial z^2}\end{equation}
+  \begin{equation}\label{3D_wave_function}
+    \frac{-\hbar}{2m}\nabla^2\Psi+V\Psi=\frac{-\hbar}{j}\frac{\partial\Psi}{\partial t} \ni \nabla^2\Psi=\frac{\partial^2\Psi}{\partial x^2}+\frac{\partial^2\Psi}{\partial y^2}+\frac{\partial^2\Psi}{\partial z^2}\end{equation}
 \item Separation of variables:
-	\begin{equation}\label{separated}
-		\frac{-\hbar}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}
-	\end{equation}
-	$$\Rightarrow$$
-	\begin{equation}\label{still_separated}
-		-\frac{\hbar}{2m}\frac{\partial^2\psi(x)}{\partial x^2}\phi(t)+V(x)\psi(x)\phi(t)=-\frac{\hbar}{j}\psi(x)\frac{\partial\phi}{\partial t}
-	\end{equation}
-	$$\Rightarrow$$
-\begin{equation}\label{time_dependent}
-	\frac{d\phi(t)}{dt}+\frac{j}{\hbar}E\phi(t)=0	
-	\end{equation} (time dependent portion)
-	\begin{equation}\label{time_independent}
-		-\frac{\hbar}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)
-	\end{equation} (time independent portion)
-
+  \begin{equation}\label{separated}
+    \frac{-\hbar}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x)\Psi(x,t)=\frac{-\hbar}{j}\frac{\partial\Psi(x,t)}{\partial t}
+  \end{equation}
+  $$\Rightarrow$$
+  \begin{equation}\label{still_separated}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi(x)}{\partial x^2}\phi(t)+V(x)\psi(x)\phi(t)=-\frac{\hbar}{j}\psi(x)\frac{\partial\phi}{\partial t}
+  \end{equation}
+  $$\Rightarrow$$
+  \begin{equation}\label{time_dependent}
+    \frac{d\phi(t)}{dt}+\frac{j}{\hbar}E\phi(t)=0	
+  \end{equation} (time dependent portion)
+  \begin{equation}\label{time_independent}
+    -\frac{\hbar}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)
+  \end{equation} (time independent portion)
+  
 \item E $\equiv$ equivalent constant, corresponds to total energy of the particle
 \item Wave function as linear combination of various eigenfunctions
-	\begin{equation}
-	\label{eigenfunctions}
-	\psi(x,t)=\Sum_{n}C_{n}\Psi_{n}e^{-j\frac{E_{n}}{\hbar t}} \ni E_{n}\equiv nth~prefactor
-	\end{equation}
+  \begin{equation}
+    \label{eigenfunctions}
+    \psi(x,t)=\Sum_{n}C_{n}\Psi_{n}e^{-j\frac{E_{n}}{\hbar t}} \ni E_{n}\equiv nth~prefactor
+  \end{equation}
 \item Infinite potential well
-		\[V(x) = \left\{
-				  \begin{array}{lr}
-					  0 & , x \neq 0 \text{ and } x \neq L\\
-			\infty & , x = 0 \text{ or } x = L
-					    \end{array}
-					    \right.
-				    \]
-				    $$\Rightarrow$$
-    \begin{equation}
-	    (\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x))\psi(x)=E\psi(x)\Rightarrow\frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar}E\psi(x)
-    \end{equation}$$\Rightarrow$$
-    \begin{equation}
-	    \frac{d^2\psi(x)}{dx^2}+\frac{2m}{\hbar^2}E\psi(x)=0
-    \end{equation}$$\Rightarrow$$
-    \begin{equation}
-	    \psi(x)=\{\sin(kx),\cos(kx)\}\ni k=\frac{\sqrt{2mE}}{\hbar}
-    \end{equation}
+  \[V(x) = \left\{
+  \begin{array}{lr}
+    0 & , x \neq 0 \text{ and } x \neq L\\
+    \infty & , x = 0 \text{ or } x = L
+  \end{array}
+  \right.
+  \]
+  $$\Rightarrow$$
+  \begin{equation}
+    (\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x))\psi(x)=E\psi(x)\Rightarrow\frac{d^2\psi(x)}{dx^2}=\frac{2m}{\hbar}E\psi(x)
+  \end{equation}$$\Rightarrow$$
+  \begin{equation}
+    \frac{d^2\psi(x)}{dx^2}+\frac{2m}{\hbar^2}E\psi(x)=0
+  \end{equation}$$\Rightarrow$$
+  \begin{equation}
+    \psi(x)=\{\sin(kx),\cos(kx)\}\ni k=\frac{\sqrt{2mE}}{\hbar}
+  \end{equation}
+  \begin{equation}
+    \cos(kx)\neqk0\text{ when }x=0\Rightarrow A\sin(kx)\text{ is our solution. }\ni k=\frac{\sqrt{2mE}}{\hbar}
+  \end{equation}
+  \begin{equation}
+    \text{when potential is 0 at x = 0 and L, }k=\frac{n\pi}{L},n=\{1,2,3,...\}
+  \end{equation}
+  \begin{equation}
+    \text{therefore: }\frac{\sqrt{2mE_n}}{\hbar} = \frac{n\pi}{L}\Rightarrow E_n=\frac{n^2\pi^2\hbar^2}{wmL^2}
+  \end{equation}
+\item A is found by normalizing the probability densiyt integral
+  \begin{equation}
+    \int_{-\infty}^{\infty}\Psi^*\Psi dx=\int_0^LA^2\sin^2(\frac{n\pi x}{L})dx = A^2\frac{L}{2} \text{\\review~trig~ calc~ and~ show~  the~ process~ here}
+  \end{equation}
+  \\Set the above to 1 to find A
+  \begin{equation}
+    \frac{A^2L}{2}=1\Rightarrow A=\sqrt{\frac{2}{L}}
+  \end{equation}
+  \begin{equation}
+    \text{Therefore:~ }\psi=\sqrt{\frac{2}{L}}\sin(\frac{n\pi}{L})\text{ ~for~ an~ infinite~ well}
+  \end{equation}
+\item Parabolic Potential Well (simple harmonic oscillator)
+  \begin{equation}
+    V(x)=kx^2, E_n=(n+\frac{1}{2})\hbar\omega
+  \end{equation}
+\item Coulombic Potential Well
+  \begin{equation}
+    \frac{d^2}{d\phi^2}\Phi+m^2\Phi=0\Rightarrow\Phi_m(\phi)=Ae^{jm\phi}
+  \end{equation}
+  \begin{equation}
+    1=\int_0^{2\pi}\Psi^*\Psi d\psi\Rightarrow\int_0^{2\pi}\Phi_m^*(\phi)\Phi_m(\phi)d\phi=1
+  \end{equation}  \begin{equation}
+    \Rightarrow A^2\int_0^{2\pi}e^{-jm\phi}e^{jm\phi}d\phi
+  \end{equation}
+  $$\Rightarrow$$
+  \begin{equation}A^2\int_0^{2\pi}d\phi=2\piA^2
+  \end{equation}$$\Rightarrow$$
+  \begin{equation}A=\frac{1}{\sqrt{2\pi}}\Rightarrow \Phi_m(\phi)=\frac{1}{\sqrt{2\pi}}e^{jm\phi}
+  \end{equation}$$\ni m=\{...,-3,-2,-1,0,1,...\}$$\\
+  similar for \Theta_{l}(\theta) and R_n(r)
+\item Atomic numbers describing allowable states in a hydrogen atom\\
+  $n = 1,2,3,...$\\$l=0,1,2,3,...,n-1$\\$m (m_l) = -l,...,-2,-1,0,1,2,...,l$\\$s (m_s) = \frac{\pm\hbar}{2}$\\
+\item \begin{tabular}{c|c|c|c|c|c}
+  n & l & m & $\frac{s}{\hbar}$& Allowable states in subshell & Allowable states in complete shell \\
+  \hline
+  1 & 0 & 0 & $\pm\frac{1}{2}$ & 2 & 2 \\
+  2 & 0 & 0 & $\pm\frac{1}{2}$ & 2 &   \\
+  2 & 1 & -1 & $\pm\frac{1}{2}$ &   & 8 \\
+  2 & 1 & 0 & $\pm\frac{1}{2}$ & 6  &   \\
+  2 & 1 & 1 & $\pm\frac{1}{2}$&   &   \\
+  \hline
+  3 & 0 & 0 & $\pm\frac{1}{2}$ & 2  & 18  \\
+  \hline
+  3 & 1 & -1 & $\pm\frac{1}{2}$ &   &   \\
+  3 & 1 & 0 & $\pm\frac{1}{2}$ & 6  & 18  \\
+  3 & 1 & 1 & $\pm\frac{1}{2}$ &   &   \\
+  \hline
+  3 & 2 & -2 & $\pm\frac{1}{2}$ &   &   \\
+  3 & 2 & -1 & $\pm\frac{1}{2}$ &   &   \\
+  3 & 2 & 0 & $\pm\frac{1}{2}$ & 10  & 18  \\
+  3 & 2 & 1 & $\pm\frac{1}{2}$ &   &   \\
+  3 & 2 & 2 & $\pm\frac{1}{2}$ &   &   \\    
+\end{tabular}
+\item n is the principle atomic number
+\item l is the number that determines s,p,d,f,g,...
 \end{itemize}
 \endsubsection
 \endsection
