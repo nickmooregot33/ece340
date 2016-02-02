@@ -1,7 +1,7 @@
 Energy Bands and Charge Carriers in Semiconductors
-===
+===	       
 3.1 Bonding Forces and Energy Bands in Solids
----
+--- 
 - electrons in solids are restricted to certain energies and are not allowed at other energies.  
 	- has range of *band* of energies allowed per electron due to overlapping of wave functions of other electrons -- Pauli exclusion
 
@@ -18,7 +18,7 @@ Energy Bands and Charge Carriers in Semiconductors
 	- outer electron of each alkali atom is given to the crystal as a whole
 	- solid is a bunch of ions with closed shells surrounded by a sea of free electrons
 		- electrons are free to move around the crystal when influenced by electric field
-	- lattice is held together by interaction of positive ion cores and surrounding free electrons
+		- lattice is held together by interaction of positive ion cores and surrounding free electrons
 
 - covalent bonding
 	- in the diamond lattice semiconductors (Ge, Si, C)
@@ -63,6 +63,44 @@ Energy Bands and Charge Carriers in Semiconductors
   - **electron-hole pair (EHP)** is an electron excited to conduction band from valence band, and the hole it leaves behind
   - electrons in conduction band are free to move around easily
   - current contribution of a hole is equivalent to that of a positively charged particle with velocity v_p (the same as the missing electron)
-  - 
 
+**Effective Mass**
+- electrons in a crystal are not free from interaction with the lattice
+  - wave-particle motion is different from e^- in free space
+  - therefore e^-s have an altered values of particle mass
+  - effective mass calculations have to take 3D shape of energy bands into account
+    - curvature of the band determines the e^- effective mass
+      - electrons with negative charge and negative mass move with the electric field in the valence band => just like the holes they are modeling
+      - the curvature changes based on k, so we have varying electron effective masses based on what direction we are going in the crystal
+      	- longitudinal effective mass along the major axis, and two transverse effective masses along the minor axes
+- effective mass values need to be selected based on the material in question
 
+**Intrinsic Material**
+- intrinsic semiconductors are perfect crystals with no impurities or lattice defects
+- no charge carriers at 0K
+- higher temps => EHPs are generated 
+- EHPs are the only charge carriers in an intrinsic crystal
+- conduction band electron numbers are equal to number of valence band holes
+- n_i is the number of holes or the number of electrons in the bands for intrinsic material
+  - r_i is the recombination rate
+  - g_i is the generation rate
+  - all are measured in \frac{EHP}/{cm^3} and all are temperature dependent
+
+**Extrinsic Material**
+- doping creates extrinsic material by purposely introducing impurities into the crystal
+- 2 types, n-type and p-type
+  - n-type adds electrons to the conduction band
+  - p-type adds holes to the valence band
+- extrinsic  material is when n_0 and p_0 are different from n_i
+- impurities create new energy levels, usually in the band gap
+  - donor level
+    - created near the conduction band.  It's full at 0K, but as temperature rises, almost all of the electrons jump to conduction band
+    - column V atoms are generally donor impurities for Ge and Si.  They have 5 electrons in the outer shell, so when they fill Column IV slots as impurities, they end up having an extra electron crammed in, that usually releases easily
+  - acceptor level
+    - created near the valence band.  It's empty at 0K, but as temperature rises electrons jump into the acceptor level, leaving holes behind
+    - atoms from column III are acceptor impurities in Ge and Si, as they only have 3 valence electrons, leaving an incomplete bond
+- amphoteric impurities
+  - can serve as donors or acceptors depending on which sublattices they are  sitting in
+- when doping, one type of carrier usually dominates, called the *majority carrier*, and the other one is the *minority carrier.*
+
+**Electrons and Holes in Quantum Wells**
