@@ -1,4 +1,4 @@
-Energy Bands and Charge Carriers in Semiconductors
+ >Energy Bands and Charge Carriers in Semiconductors
 ===	       
 3.1 Bonding Forces and Energy Bands in Solids
 --- 
@@ -103,4 +103,6 @@ Energy Bands and Charge Carriers in Semiconductors
   - can serve as donors or acceptors depending on which sublattices they are  sitting in
 - when doping, one type of carrier usually dominates, called the *majority carrier*, and the other one is the *minority carrier.*
 
-**Electrons and Holes in Quantum Wells**
+3.3 Carrier Concentrations
+---
+- 

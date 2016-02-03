@@ -171,8 +171,7 @@
 \item n is the principle atomic number
 \item l is the number that determines s,p,d,f,g,...
 \end{itemize}
-\endsubsection
-\endsection
+
 \section{Chapter 3}
 \begin{itemize}
 \item Equilibrium number of EHP's in pure Si at room temp: $$10^{10}\frac{EHP}{cm^3}$$
@@ -195,6 +194,25 @@
   \begin{equation}r=\frac{4\pi\epsilon_r\epsilon_0\hbar^2}{m_n^*q^2}\end{equation} 
 \item Intrinsic carrier concentration $n_i$ of Si is about $10^{10}cm^{-3}$ at room temperature
 \end{itemize}
-\endsection
+\subsection{Carrier Concentrations}
+\begin{itemize}
+\item Standard Fermi Equation:
+  \begin{equation}f(E)=\frac{1}{1+e^{\frac{(E-E_F)}{kT}}}\ni\text{k~is~the~Boltzman~constant~} k=8.62*10^{-5}\frac{eV}{K}=1.38*10^{-23}\frac{J}{K}\end{equation}
+\item Calculate the number of electrons and holes in a semiconductor when you know the density of states in valence and conduction bands are known
+  \begin{itemize}
+  \item Concentration of electrons in the conduction band by integral:
+    \begin{equation}n_0=\int_{E_c}^{\infty}f(E)N(E)dE\ni N(E)d(E)\text{~is~the~density~of~states~}(cm^{-3})\text{~in~the~energy~range~of~dE}\end{equation}
+  \item Concentration of electrons in the conduction band by using \textit{Effective Density of states}:
+    \begin{equation} n_0 = N_c f (E_c) \ni N_c \text{~is~the~effective~density~of~states~at~} E_c \end{equation}
+  \item When E-$E_F$ is several kT we can simplify the equation by recognizing that the exponential dominates the denominator
+    \begin{equation}f(E_c)=\frac{1}{1+e^{\frac{(E-E_F)}{kT}}}\Rightarrow e^{\frac{(E-E_F)}{kT}}\end{equation}
+    \begin{equation)n_0=N_ce^{-\frac{E_c-E_F}{kT}}}\end{equation}
+  \item Effective Density of States is:
+    \begin{equation}N_c=2(\frac{2\pi m_n^*kT}{h^2})^{\frac{3}{2}}\ni m_n^*\equiv \text{~the~density~of~states~effective~mass~for~electrons}\end{equation}
+  \item Density of States Effective Mass for Electrons is:
+    \begin{equation}(m_n^*)^{\frac{3}{2}}=6(m_.m_t^2)^{\frac{1}{2}}\end{equation}
+  \end{itemize}
+\end{itemize}
+
 
 \end{document}
