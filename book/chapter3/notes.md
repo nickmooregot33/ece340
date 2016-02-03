@@ -105,4 +105,11 @@
 
 3.3 Carrier Concentrations
 ---
+- Fermi Level
+  - f(e) gives probability an __*available*__ energy state at E will be occupied by an electron at absolute temperature T
+    - f(E) is probability states above E_F is filled
+    - 1-f(E) is probability states below E_F is empty
+  - E_f is the fermi level
+
+**Electron and Hole Concentrations at Equilibrium
 - 
