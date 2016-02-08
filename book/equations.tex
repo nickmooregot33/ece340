@@ -1,4 +1,10 @@
 \documentclass{article}
+
+\usepackage{geometry}
+\geometry{a4paper, total={190mm,257mm}, left=10mm, top=10mm}
+
+\usepackage{amsmath}
+
 \begin{document}
 
 
@@ -6,9 +12,9 @@
 \begin{itemize}
 \item Energy E of a photon of light in eV: $$\lambda = \frac{1.24eV}{E}$$
 \item Distance D between adjacent planes in cubic lattices: $$D = \frac{a}{\sqrt{ h^2 + k^2 + l^2} }$$
-\item Angle between 2 Miller index directions A and B: $$\cos\(\theta\) = \frac{A\bullet B}{|A| |B|}$$
+\item Angle between 2 Miller index directions A and B: $$\cos(\theta) = \frac{A\bullet B}{|A| |B|}$$
 \end{itemize}
-\endsection
+
 \section{Chapter 2}
 \begin{itemize}
 \item Planck relationship: $$ E=hv = (\frac{h}{2 \pi})(2 \pi v) = \hbar \omega$$
@@ -22,25 +28,27 @@
 \item Postulate for Bohr:$$\rho_0=n\hbar,n=1,2,3,4,...$$
 \item Finding radial forces on orbiting electron:\\(Electrical force toward nucleus) = (Equivalent force in terms of radial acceleration)\\$$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}$$
   $$\rho_0=n\hbar=mvr  \Rightarrow mv^2=\frac{m^2v^2}{m}=\frac{n^2\hbar^2}{mr^2}$$ $$\frac{q^2}{kr^2}=\frac{1}{mr}\frac{n^2\hbar^2}{r^2}\Rightarrow r_n=\frac{kn^2\hbar^2}{mq^2}$$ $|r_n$ is the radius of the nth orbit
-  $$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}\Rightarrow \frac{n\hbar}{rm}\Rightarrowv=\frac{q^2}{kn\hbar}$$by subbing r from above.  \\\\$\Rightarrow$ K.E. of $e^-=$$$\frac{1}{2}mv^2=\frac{mq^4}{2k^2n^2\hbar^2}$$\\\\P.E. of $e^-=$$$-\frac{q^2}{kr_n}=-\frac{mq^4}{k^2n^2\hbar^2}$$ by subbing r\\\\Total Energy of $e^-=$$$E_n=KE=PE=-\frac{mq^4}{2k^2n^2\hbar^2}=-KE$$
+  $$-\frac{q^2}{kr^2}=-\frac{mv^2}{r}\Rightarrow \frac{n\hbar}{rm}\Rightarrow=\frac{q^2}{kn\hbar}$$by subbing r from above.  \\\\$\Rightarrow$ K.E. of $e^-=$$$\frac{1}{2}mv^2=\frac{mq^4}{2k^2n^2\hbar^2}$$\\\\P.E. of $e^-=$$$-\frac{q^2}{kr_n}=-\frac{mq^4}{k^2n^2\hbar^2}$$ by subbing r\\\\Total Energy of $e^-=$$$E_n=KE=PE=-\frac{mq^4}{2k^2n^2\hbar^2}=-KE$$
 \item Energy difference between orbits: $$E_{n2}-E_{n1}=\frac{mq^4}{2k^2\hbar^2}(\frac{1}{n_1^2}-\frac{1}{n_2^2})$$
 \item Frequency of light given by a transition between orbits:$$V_{21}=\left[\frac{mq^4}{2k^2\hbar^2h}\right](\frac{1}{n_1^2}-\frac{1}{n_2^2})$$
 \item Heisenberg uncertainty principle:\\
-  \begin{align}
+  \begin{equation}
     \label{Heisenberg}
-    &(\Delta x)&(\Delta \rho_x)& \ge&\frac{\hbar}{2}\\
+    (\Delta x)(\Delta \rho_x) \ge\frac{\hbar}{2}\\
+  \end{equation}
+  \begin{equation}
     \label{Heisenberg part 2}
-    &(\Delta E)&(\Delta t)&\ge&\frac{\hbar}{2}
-  \end{align}
+    (\Delta E)(\Delta t)\ge\frac{\hbar}{2}
+  \end{equation}
 \end{itemize}
 \subsection{Quantum Mechanics}
 \begin{tabular}{lcr}
-  Classical Variable & \rightarrow & Quantum Operator\\
+  Classical Variable & $\rightarrow$ & Quantum Operator\\
   \hline
-  $x$ & \rightarrow & $x$\\
-  $f(x)$ & \rightarrow & $f(x)$\\
-  $\rho(x)$ & \rightarrow & $\frac{\hbar}{j} \frac{\partial}{\partial x}$\\
-  E & \rightarrow & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
+  $x$ & $\rightarrow$ & $x$\\
+  $f(x)$ & $\rightarrow$ & $f(x)$\\
+  $\rho(x)$ &$ \rightarrow$ & $\frac{\hbar}{j} \frac{\partial}{\partial x}$\\
+  E & $\rightarrow$ & $-\frac{\hbar}{j} \frac{\partial}{\partial t}$\\
   \hline
 \end{tabular}\\
 \begin{itemize}
@@ -55,7 +63,7 @@
     <Q>=\int_{-\infty}^{\infty}\Psi^{*}Q_{op}\Psi dxdydz
   \end{equation}
 \item Classical energy of a partical:\begin{equation} \label{classical_energy_of_a_partical}
-  KE+PE=E\Rightarrow\frac{1}{2}mv^2 + V = E\end{equations}
+  KE+PE=E\Rightarrow\frac{1}{2}mv^2 + V = E\end{equation}
   \begin{equation}
     \label{part_2}
     \frac{1}{2}mv^2=\frac{1}{2}\frac{(mv)^2}{m}=\frac{1}{2}\frac{\rho^2}{m}=
@@ -86,7 +94,7 @@
 \item Wave function as linear combination of various eigenfunctions
   \begin{equation}
     \label{eigenfunctions}
-    \psi(x,t)=\Sum_{n}C_{n}\Psi_{n}e^{-j\frac{E_{n}}{\hbar t}} \ni E_{n}\equiv nth~prefactor
+    \psi (x,t)=\sum_{n}C_{n}\Psi_{n}e^{-j\frac{E_{n}}{\hbar t}} \ni E_{n}\equiv nth~prefactor
   \end{equation}
 \item Infinite potential well
   \[V(x) = \left\{
@@ -107,7 +115,7 @@
     \psi(x)=\{\sin(kx),\cos(kx)\}\ni k=\frac{\sqrt{2mE}}{\hbar}
   \end{equation}
   \begin{equation}
-    \cos(kx)\neqk0\text{ when }x=0\Rightarrow A\sin(kx)\text{ is our solution. }\ni k=\frac{\sqrt{2mE}}{\hbar}
+    \cos(kx)\neq 0\text{ when }x=0\Rightarrow A\sin(kx)\text{ is our solution. }\ni k=\frac{\sqrt{2mE}}{\hbar}
   \end{equation}
   \begin{equation}
     \text{when potential is 0 at x = 0 and L, }k=\frac{n\pi}{L},n=\{1,2,3,...\}
@@ -140,11 +148,11 @@
     \Rightarrow A^2\int_0^{2\pi}e^{-jm\phi}e^{jm\phi}d\phi
   \end{equation}
   $$\Rightarrow$$
-  \begin{equation}A^2\int_0^{2\pi}d\phi=2\piA^2
+  \begin{equation}A^2\int_0^{2\pi}d\phi=2\pi A^2
   \end{equation}$$\Rightarrow$$
   \begin{equation}A=\frac{1}{\sqrt{2\pi}}\Rightarrow \Phi_m(\phi)=\frac{1}{\sqrt{2\pi}}e^{jm\phi}
   \end{equation}$$\ni m=\{...,-3,-2,-1,0,1,...\}$$\\
-  similar for \Theta_{l}(\theta) and R_n(r)
+  similar for $\Theta_{l}(\theta)$ and $R_n(r)$
 \item Atomic numbers describing allowable states in a hydrogen atom\\
   $n = 1,2,3,...$\\$l=0,1,2,3,...,n-1$\\$m (m_l) = -l,...,-2,-1,0,1,2,...,l$\\$s (m_s) = \frac{\pm\hbar}{2}$\\
 \item \begin{tabular}{c|c|c|c|c|c}
@@ -178,7 +186,7 @@
 \item Si atom density in pure Si at room temp: $$5*10^{22}\frac{atoms}{cm^3}$$
 \item Releationship of (E,k) for a free electron related to electron mass
   \begin{equation}
-    \frac{d^{2}E}{dk^2}=\frac{\hbar^2}{m}\Rightarrowm^*=\frac{\hbar^2}{\frac{d^2E}{dk^2}}\text{~so~the~curvature~of~the~band~determines~the~}e^{-}\text{~effective~mass}
+    \frac{d^{2}E}{dk^2}=\frac{\hbar^2}{m}\Rightarrow m^*=\frac{\hbar^2}{\frac{d^2E}{dk^2}}\text{~so~the~curvature~of~the~band~determines~the~}e^{-}\text{~effective~mass}
   \end{equation}
 \item Velocity of an electron (v) is the group velocity of a quantum mechanical electron wavepacket
   \begin{equation}v=\frac{d\omega}{dk} = (\frac{1}{\hbar})\frac{dE}{dk}\end{equation}
@@ -189,7 +197,7 @@
   Consider the loosely bound electron as circling the tightly bound ``core'' electons.
 
   Magnitude of the ``ground state'' is:
-  \begin{equation}E=\frac{mq^4}{2k^2\hbar^2}\nik=4\pi\epsilon_0\epsilon_r, m\equiv m_n^*\text{~(conductivity~effective~mass)}\end{equation}
+  \begin{equation}E=\frac{mq^4}{2k^2\hbar^2}\ni k=4\pi\epsilon_0\epsilon_r, m\equiv m_n^*\text{~(conductivity~effective~mass)}\end{equation}
 \item Radius of of electron orbit around donor, assuming ground state.  Equation was pulled from chapter 2
   \begin{equation}r=\frac{4\pi\epsilon_r\epsilon_0\hbar^2}{m_n^*q^2}\end{equation} 
 \item Intrinsic carrier concentration $n_i$ of Si is about $10^{10}cm^{-3}$ at room temperature
@@ -206,13 +214,49 @@
     \begin{equation} n_0 = N_c f (E_c) \ni N_c \text{~is~the~effective~density~of~states~at~} E_c \end{equation}
   \item When E-$E_F$ is several kT we can simplify the equation by recognizing that the exponential dominates the denominator
     \begin{equation}f(E_c)=\frac{1}{1+e^{\frac{(E-E_F)}{kT}}}\Rightarrow e^{\frac{(E-E_F)}{kT}}\end{equation}
-    \begin{equation)n_0=N_ce^{-\frac{E_c-E_F}{kT}}}\end{equation}
+    \begin{equation}n_0=N_ce^{-\frac{E_c-E_F}{kT}}\end{equation}
   \item Effective Density of States is:
     \begin{equation}N_c=2(\frac{2\pi m_n^*kT}{h^2})^{\frac{3}{2}}\ni m_n^*\equiv \text{~the~density~of~states~effective~mass~for~electrons}\end{equation}
   \item Density of States Effective Mass for Electrons is:
     \begin{equation}(m_n^*)^{\frac{3}{2}}=6(m_.m_t^2)^{\frac{1}{2}}\end{equation}
+  \item So by similar reasoning, the concentration of holes in the valence band is$:$
+    \begin{equation}p_0 = N_v[1 - f(E_v)]\end{equation}
+      where $N_v$ is the effective density of states for the valence band.
+    \item The probability of finding an empty state at $E_v$ is$:$
+      \begin{equation}1 - f(E_v) = 1 - \frac{1}{1 + e^{\frac{E_V - E_F}{kT}}} \simeq e^{-\frac{(E_F - E_v)}{kT}} \end{equation}
+    \item So the concentration of holes in the valence band is$:$
+      \begin{equation}p_0 = N_ve^{-\frac{E_F-E_v}{kT}} \end{equation}
+    \item With effective density of states in the valence band$:$
+      \begin{equation}N_v = 2(\frac{2\pi m_p^{*}kT}{h^2})^{\frac{3}{2}} \end{equation}
+    \item For \textit{intrinsic material}, $E_F$ is at some intrinsic level $E_i$ near the middle of the band gap.  If $N_v = N_c$ then it actually is the middle of the band gap.  Usually there is a difference in effective masses, though so there is usually a difference.  
+    \item Intrinsic electron and hole concentrations are$:$
+      \begin{equation} n_i = N_ce^{-\frac{E_c - E_i}{kT}}, p_i = N_ve^{-\frac{E_i - E_v}{kT}} \end{equation}
+    \item The product of $n_0$ and $p_0$ at equilibrium is a constant for a particular material and temperature, even if the doping is varied
+      \begin{equation} n_0p_0 = (N_ce^{-\frac{E_c - E_i}{kT}})(N_ve^{-\frac{E_i - E_v}{kT}}) = N_cN_ve^{-\frac{E_c - E_v}{kT}}= N_cN_ve^{-\frac{E_g}{kT}}\end{equation}
+      \begin{equation} n_ip_i =  (N_ce^{-\frac{E_c - E_i}{kT}})(N_ve^{-\frac{E_i - E_v}{kT}}) = N_cN_ve^{-\frac{E_g}{kT}} \end{equation}
+      \begin{align}\boxed{n_i=p_i \Rightarrow \sqrt{N_cN_v}e^{-\frac{E_g}{2kT}},~~ n_0p_0  = n_i^2} \end{align}
+      \begin{align}
+        \boxed{n_0 = n_ie^{-\frac{E_F - E_i}{kT}}} \\ \boxed{p_0 = n_ie^{-\frac{E_i - E_F}{kT}}} 
+      \end{align}
   \end{itemize}
 \end{itemize}
+
+\subsection{Temperature Dependence of Carrier Concentrations}
+The exponential temperature dependence on the intrinsic carrier concentration dominates the other factors$:$
+\begin{equation}n_i(T)=2(\frac{2\pi kT}{h^2})^{\frac{3}{2}} (m_n^*m_p^*)^{\frac{3}{4}}e^{-\frac{E_g}{2kT}} \end{equation}
+\subsection{Compensation and Space Charge Neutrality}
+\begin{itemize}
+\item Compensation changes the effective number of donors$:$
+  \begin{equation}N_{d_e}= N_d - N_a \text{when~the number of donors exceeds the number of acceptors}\end{equation}
+  \begin{equation}N_{a_e}= N_a - N_d \text{when~the number of acceptors exceeds the number of donors}\end{equation}
+\item Space Charge Neutrality dictates that the number of positive charges (holes and ionized donor atoms) must balance the number of negative charges (electrons and ionized acceptor atoms)$:$
+  \begin{equation}p_0 + N_d^+ = n_0 + N_a^- \Rightarrow n_0 = p_0 + (N_d^+ - N_a^-)\end{equation}
+\item For a material that is doped n-type and the material is in the extrinsic region, we can approximate by recognizing that the donors dominate$:$
+\begin{equation} n_0 \simeq N_d - N_a\end{equation}
+\end{itemize}
+
+\section{Drift of Carriers in Electric and Magnetic Fields}
+\subsection{Conductivity and Mobility}
 
 
 \end{document}

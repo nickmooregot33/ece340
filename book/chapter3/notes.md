@@ -1,4 +1,4 @@
- >Energy Bands and Charge Carriers in Semiconductors
+Energy Bands and Charge Carriers in Semiconductors
 ===	       
 3.1 Bonding Forces and Energy Bands in Solids
 --- 
@@ -112,4 +112,16 @@
   - E_f is the fermi level
 
 **Electron and Hole Concentrations at Equilibrium
+- Lots of Equations
+
+**Temperature Dependence of Carrier Concentrations**
+- The temperature dependence dominates the other dependencies when calculating the intrinsic carrier concentration
+- Up until a certain temperature (starting from 0K) the donor atoms get ionized (ionization region)
+- once the threshold for all donor atoms being ionized is reached, n_0 stays constant at the number of donors and the device is extrinsic
+- when temperature gets to another point, the intrinsic carrier begin to outnumber the donor atoms, and the device becomes intrinsic again
+  - most of the time this is avoided by making sure the temperature range of operation is below this temperature
+
+**Compensation and Space Charge Neutrality**
+- often enough, the device has both donors and acceptors.  How to calculate?
+- conduction band electrons end up filling the acceptor holes, reducing n_0 from N_d
 - 
