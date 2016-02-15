@@ -213,7 +213,7 @@
   \item Concentration of electrons in the conduction band by using \textit{Effective Density of states}:
     \begin{equation} n_0 = N_c f (E_c) \ni N_c \text{~is~the~effective~density~of~states~at~} E_c \end{equation}
   \item When E-$E_F$ is several kT we can simplify the equation by recognizing that the exponential dominates the denominator
-    \begin{equation}f(E_c)=\frac{1}{1+e^{\frac{(E-E_F)}{kT}}}\Rightarrow e^{\frac{(E-E_F)}{kT}}\end{equation}
+    \begin{equation}f(E_c)=\frac{1}{1+e^{\frac{(E-E_F)}{kT}}}\Rightarrow e^{-\frac{(E-E_F)}{kT}}\end{equation}
     \begin{equation}n_0=N_ce^{-\frac{E_c-E_F}{kT}}\end{equation}
   \item Effective Density of States is:
     \begin{equation}N_c=2(\frac{2\pi m_n^*kT}{h^2})^{\frac{3}{2}}\ni m_n^*\equiv \text{~the~density~of~states~effective~mass~for~electrons}\end{equation}
@@ -257,6 +257,84 @@ The exponential temperature dependence on the intrinsic carrier concentration do
 
 \section{Drift of Carriers in Electric and Magnetic Fields}
 \subsection{Conductivity and Mobility}
+\begin{itemize}
+\item one dimensional total force of the electron field on n electrons in a solid, with an E-field in the x direction, given $p_x$ is the total momentum of the group
+  \begin{equation}
+    -nq \mathcal{E}_x = \frac{dp_x}{dt}\vert_{field}
+  \end{equation}
+\item Rate of decrease in number of electrons that have not suffered a collision, at time t:
+  \begin{equation}
+    -\frac{dN(t)}{dt}=\frac{1}{\overline{t}}N(t)
+  \end{equation}
+  \begin{equation}
+    \Rightarrow N(t)=N_0e^{-t/\overline{t}} 
+  \end{equation}
+  \begin{itemize}
+  \item N(t) is the number of electrons that have not suffered a collision
+  \item $\frac{1}{\overline{t}} $is the proportionaility constant for finding the rate of decrease of N(t)
+  \item    \={t} is the Mean-free=time (average time between scattering events)
+  \end{itemize}
+\item The differential change in the total momentum of all the electrons is:
+  \begin{equation}
+    dp_x = -p_x\frac{dt}{\overline{t}}
+  \end{equation}
+  Where $\frac{dt}{\overline{t}}$ is the probability any electron has a collision in time interval $dt$\\
+  So the rate of change of $p_x$ due to decelerating affects of collisions is:
+  \begin{equation}
+    \frac{dp_x}{dt}\rvert_{collisions}=-\frac{p_x}{\overline{t}}
+  \end{equation}
+\item The sum of acceleration and deceleration must be zero for steady state:
+  \begin{equation}
+    -\frac{p_x}{\overline{t}}-nq\mathcal{E}_x = 0 \Rightarrow -\frac{p_x}{\overline{t}} = nq\mathcal{E}_x
+  \end{equation} 
+  So the average momentum for an electron is:
+  \begin{equation}
+    \Rightarrow \left<p_x\right>=\frac{p_x}{n} = -q\overline{t}\mathcal{E}_x
+  \end{equation}
+  And the average drift velocity for an electron is due to the electric field:
+  \begin{equation}
+    \left<v_x\right>=\frac{\left<p_x\right>}{m_n^*}=-\frac{q\overline{t}}{m_n^*}\mathcal{E}_x
+  \end{equation}
+\item Current Density:
+  \begin{equation}
+    J_x=-qn\left<v_x\right> \frac{ampere}{cm^2} = \frac{coulomb}{electron}\bullet\frac{electrons}{cm^3}\bullet\frac{cm}{s}
+  \end{equation}
+  Substitution average velocity gives:
+  \begin{equation}
+    J_x=(\frac{nq^2\overline{t}}{m_n^*})\mathcal{E} = \sigma\mathcal{E}
+  \end{equation}
+  Which shows that current density is proportional to the electric field.
+\item Conductivity $\sigma(\Omega-cm)^{-1}$ can be written $\sigma=qnu_n\ni u_n\equiv\frac{q\overline{t}}{m_n^*}$ where $u_n$ is the electron mobility and $m_n^*$ is the conductivity effective mass for an electron (which is different from the density of states version)
+  \begin{equation}
+    \sigma(\Omega-cm)^{-1}=\sigma=qnu_n\ni u_n\equiv\frac{q\overline{t}}{m_n^*}
+  \end{equation}
+\item Conductive mass for an electron in Si:
+  \begin{equation}
+    \frac{1}{m_n^*} = \frac{1}{3}(\frac{1}{m_l} - \frac{2}{m_t})
+  \end{equation}
+\item Mobility can also be expressed in terms of average velocity and Electric field:
+  \begin{equation}
+    u_n=-\frac{\left<v_x\right>}{\mathcal{E}_x}\frac{cm^2}{V-s} -- (\frac{\frac{cm}{s}}{\frac{V}{cm}})
+    \end{equation}
+  and is the average particle's drift velocity per unit electric field.
+\item Expressing mobility this way allows us to show current density in terms of mobility.
+  \begin{equation}
+    J_x=qnu_n\mathcal{E}
+  \end{equation}
+\item The above assumes the current is just carried by electrons.  Actually, holes contribute as well:
+  \begin{equation}
+    J_x=q(nu_n + pu_p)\mathcal{E} = \sigma\mathcal{E}
+  \end{equation}
+  The curvature of a material's energy band structure affects the mobility, where a stronger curvature means a smaller $m_n^*$ which means a higher mobility, and a lesser curvature means a larger $m_n^*$ which leads to a lower mobility.
+\end{itemize}
 
+\subsection{Drift and Resistance}
+\begin{itemize}
+\item If a semiconducting bar has both holes and electrons, then resistance is thus:
+  \begin{equation}
+    R = \frac{\rho L}{wt}=\frac{L}{wt}\frac{1}{\sigma}\text{, in ohm-centimeters }(\Omega-cm)
+  \end{equation}
+\end{itemize}
 
+\subsection{Effects of Temperature and Dopng on Mobility}
 \end{document}

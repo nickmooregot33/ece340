@@ -124,4 +124,16 @@ Energy Bands and Charge Carriers in Semiconductors
 **Compensation and Space Charge Neutrality**
 - often enough, the device has both donors and acceptors.  How to calculate?
 - conduction band electrons end up filling the acceptor holes, reducing n_0 from N_d
+
+Drift of Carriers in Electric and Magnetic Fields
+---
+**Conductivity and Mobility**
+- charge carriers in a solid are always in motion (except for at 0K)
+- thermal motion
+  - random scattering from lattice vibrations, impurities, defects, and other electrons, thus net zero motion over the solid
+- apply an electric field and the cloud of electrons moves against it, and the cloud of holes moves with it, albeit slowly
+  - may not alter the path of an individual electron
+  - acceleration is balanced by deceleration from collisions, so the cloud moves steadily
+
+**Drift and Resistance**
 - 
